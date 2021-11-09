@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: HisHosptial
+  datasource:
+    url: 'jdbc:mysql://101.200.179.25:3306/2018214252?
+          createDatabaseIfNotExist=true
+          &serverTimezone=Asia/Shanghai'
+    username: 2018214252
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+
+logging:
+  level:
+    root: warn
+    com:
+      example: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'
+
+mybatis-plus:
+  configuration:
+    call-setters-on-nulls: true
+
+my:
+  secretkey: R28K42ZEJ8LWRHU5
+  salt: 636eac2534bcfcb0
+
+server:
+  port: 8080
+
+
+

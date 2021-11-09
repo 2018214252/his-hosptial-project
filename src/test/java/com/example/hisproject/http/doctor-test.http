@@ -1,0 +1,10 @@
+GET http://localhost:8080/api/doctor/medicines
+###
+POST http://localhost:8080/api/doctor/medicalRecord
+token:a802ab8d2db9da26f736c908896ff06fd7035c88d89bb738afcf09e1d21a760f8f218fedc3abb2b344b3f37cb1810c76
+Content-Type: application/json
+
+{
+  "id": "1551",
+  "details": "2"
+}

@@ -1,0 +1,64 @@
+POST http://localhost:8080/api/admin/department
+Content-Type: application/json
+
+{
+  "name": "外科"
+}
+###
+DELETE http://localhost:8080/api/admin/department/1455767799199207425
+###
+POST http://localhost:8080/api/admin/medicine
+Content-Type: application/json
+
+{
+  "name": "药品B",
+  "inventory": 20,
+  "price": 15,
+  "details": "xxx"
+}
+###
+DELETE http://localhost:8080/api/admin/medicine/1456069797035458561
+###
+PATCH http://localhost:8080/api/admin/medicine
+Content-Type: application/json
+
+{
+  "id": "1456069724188786690",
+  "name": "药品A",
+  "inventory": 50,
+  "price": 15,
+  "details": "xxx"
+}
+###
+GET http://localhost:8080/api/admin/medicines
+###
+POST http://localhost:8080/api/admin/doctor
+Content-Type: application/json
+
+{
+  "id": "2018214253",
+  "name": "医生B",
+  "department": "外科",
+  "details": "xxx"
+}
+###
+PATCH http://localhost:8080/api/admin/doctor
+Content-Type: application/json
+
+{
+  "id": "2018214258",
+  "name": "医生B",
+  "department": "呼吸内科",
+  "details": "xxx"
+}
+###
+GET http://localhost:8080/api/admin/doctors
+###
+POST http://localhost:8080/api/admin/user
+Content-Type: application/json
+
+{
+  "userName": "root",
+  "password": "123456",
+  "role": 9
+}

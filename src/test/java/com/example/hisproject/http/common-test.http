@@ -1,0 +1,40 @@
+http://localhost:8080/api/common/registered
+Content-Type: application/json
+
+{
+  "userName": "15066260178",
+  "password": "123456"
+}
+###
+GET http://localhost:8080/api/common/departments
+###
+GET http://localhost:8080/api/common/doctors/呼吸内科
+###
+POST http://localhost:8080/api/common/regd
+Content-Type: application/json
+
+{
+  "department": "呼吸内科",
+  "doctor": "2018214253",
+  "patient": "1456074165851865089"
+}
+###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "userName": "201821252",
+  "password": "2018214252"
+}
+###
+POST http://localhost:8080/api/common/regd
+token:24af32bd5e8f1fdb4d2d65e5fb4082798089b6c492f7e5f2b692e9d5264a69123f3cf069c6905d49af1ff593942762ee9a04bd025d1dd62b5c4fe9694ba56e9f
+Content-Type: application/json
+
+{
+  "department": "呼吸内科"
+}
+###
+GET http://localhost:8080/api/common/regds
+token:24af32bd5e8f1fdb4d2d65e5fb4082798089b6c492f7e5f2b692e9d5264a69123f3cf069c6905d49af1ff593942762ee9a04bd025d1dd62b5c4fe9694ba56e9f
+###
